@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ExemploJS {
+public class Exemplo10JS {
 
 	public static void main(String[] args) {
 
@@ -14,16 +14,15 @@ public class ExemploJS {
 
 		driver.get("http://automationpractice.com/index.php");
 		driver.navigate().to("http://automationpractice.com/index.php?id_category=3&controller=category");
-		
-		
+
 		WebElement productSort = driver.findElement(By.id("selectProductSort"));
-		
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		
+
 		js.executeScript("arguments[0].value='quantity:desc';", productSort);
 
 		driver.quit();
-		
+
 	}
 
 }

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ExemploMsgBox {
+public class Exemplo04MsgBox {
 
 	public static void main(String[] args) {
 
