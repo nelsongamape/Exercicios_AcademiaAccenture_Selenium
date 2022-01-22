@@ -1,5 +1,7 @@
 package stepdefinitions;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,6 +16,7 @@ public class Hooks {
 	public void antes() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 	
 	@After
